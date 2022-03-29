@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: aqua;
+}
+.hed-1 {
+  height: 170px;
+  text-align: left;
+  background-color: palegoldenrod;
+}
+.Title {
+  margin-left: 30px;
+  font-size: 120px;
+  font-weight: bold;
+  font-family: monospace;
+}
+.acces {
+  float: right;
+  position: relative;
+  bottom: 120px;
+  display: flex;
+  column-gap: 30px;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+.btn-1,
+.btn-2,
+.btn-3 {
+  width: 200px;
+  height: 120px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: monospace;
+  margin-left: 50px;
+  border-radius: 10px;
+}
+.section {
+  margin-left: 230px;
+  width: 1400px;
+  height: 400px;
+  background-color: orange;
+}
+h2 {
+  padding: 16px;
+  padding-left: 50%;
+  background-color: salmon;
+  border-radius: 16px 16px 0 0;
+}
+#home,
+#about,
+#contacts {
+  display: none;
+}
