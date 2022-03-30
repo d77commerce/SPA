@@ -5,10 +5,10 @@ import { aboutUs } from '../pages/aboutUs.js';
 export function rauter(page) {
   const curentPage = page;
   if (curentPage === 'HOME') {
-    home();
+    home('HOME');
   } else if (curentPage === 'Contacts') {
-    contacts('Mikele Plachdo');
+    contacts('Contacts');
   } else if (curentPage == 'about') {
-    aboutUs();
+    aboutUs('About Us');
   }
 }
