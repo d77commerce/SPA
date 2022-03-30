@@ -20,8 +20,5 @@ const htmlShow = input => html` <h2>${input}</h2>
     </p>
   </div>`;
 export function home(input) {
-  // aboutSection.style.display = 'none';
-  // contactSection.style.display = 'none';
-  // homeSection.style.display = 'block';
   render(htmlShow(input), insertToHtml);
 }
