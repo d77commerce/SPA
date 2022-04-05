@@ -1,8 +1,7 @@
 import { html, render } from '../node_modules/lit-html/lit-html.js';
-const homeSection = document.querySelector('#home');
-const aboutSection = document.querySelector('#about');
-const contactSection = document.querySelector('#contacts');
+
 const insertToHtml = document.querySelector('#show');
+const insertBtn = document.querySelector('#showBtn');
 const htmlShow = input => html` <h2>${input}</h2>
   <div>
     <p>HOME</p>
@@ -18,7 +17,18 @@ const htmlShow = input => html` <h2>${input}</h2>
       informed about it and agree to Agreement. s page. Delete Recipe (only for
       the creator) By clicking on "Del
     </p>
+    <form id=${'form'}>
+      <input id=${'inputBtn'} />
+      <button @click=${e => onClick(e)}>add</button>
+    </form>
   </div>`;
 export function home(input) {
   render(htmlShow(input), insertToHtml);
+}
+function onClick(e) {
+  e.preventDefault();
+  let showText = document.querySelector('#inputBtn').value;
+  const outPut = () => html`<h1>${showText}</h1>`;
+  render(outPut(), insertBtn);
+  console.log('one');
 }

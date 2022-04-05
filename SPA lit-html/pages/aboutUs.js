@@ -1,7 +1,5 @@
 import { html, render } from '../node_modules/lit-html/lit-html.js';
-const homeSection = document.querySelector('#home');
-const aboutSection = document.querySelector('#about');
-const contactSection = document.querySelector('#contacts');
+
 const insertToHtml = document.querySelector('#show');
 const htmlShow = input => html` <h2>${input}</h2>
   <div>
