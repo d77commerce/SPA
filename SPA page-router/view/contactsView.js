@@ -1,9 +1,22 @@
+import { html, render } from '../node_modules/lit-html/lit-html.js';
 const divEl = document.querySelector('#show');
 
-export const contactsEl = `<h1>CONTACTS</h1>
-  <p>just text</p>`;
+const contactsEl = () => html`<h1>CONTACTS</h1>
+  <form>
+    <label for="fname">First name:</label><br />
+    <input type="text" id="fname" name="fname" /><br />
+    <label for="lname">Last name:</label><br />
+    <input type="text" id="lname" name="lname" /><br />
+    <label type="text">Your message</label><br />
+    <textarea rows="4" cols="50" name="comment" form="usrform">
+Enter text here...</textarea
+    ><br /><br />
+
+    <input type="submit" value="Submit" />
+  </form>`;
 
 export const contacts = ctx => {
   console.log('contacts');
-  divEl.innerHTML = contactsEl;
+  render(contactsEl(), divEl);
+  //divEl.innerHTML = contactsEl;
 };

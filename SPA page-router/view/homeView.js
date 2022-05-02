@@ -1,9 +1,10 @@
+import { html, render } from '../node_modules/lit-html/lit-html.js';
 const divEl = document.querySelector('#show');
 
-const homeEl = `<h1>HOME</h1>
+const homeEl = () => html`<h1>HOME</h1>
   <p>just text</p>`;
 
 export const home = ctx => {
   console.log('home');
-  divEl.innerHTML = homeEl;
+  render(homeEl(), divEl);
 };

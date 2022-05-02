@@ -54,8 +54,3 @@ h2 {
   background-color: salmon;
   border-radius: 16px 16px 0 0;
 }
-#home,
-#about,
-#contacts {
-  display: none;
-}
